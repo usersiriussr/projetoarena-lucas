@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>PROJETO ARENA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>PROJETO ARENA</h1>
+  </header>
+
+  <div id="tela-login" class="tela">
+    <h2>Login</h2>
+    <form id="form-login">
+      <input type="text" id="login-nome" placeholder="Nome" />
+      <input type="password" id="login-senha" placeholder="Senha" />
+      <button type="submit">Entrar</button>
+    </form>
+    <p>Usuário padrão: admin / 123456</p>
+  </div>
+
+  <div id="tela-app" class="tela" style="display: none;">
+    <main>
+      <h1>Cadastro de Nomes</h1>
+      <form id="form-nome">
+        <label>
+          Seu nome:
+          <input type="text" name="nome" id="nome" />
+        </label>
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <section id="lista-nomes">
+        <h2>Nomes Cadastrados</h2>
+        <p class="lista-vazia">Nenhum nome cadastrado ainda.</p>
+        <ul></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
